@@ -34,6 +34,32 @@ namespace Assignment3_OPP
         public DateTime HireDate { get; set; }
 
         private char gender;
+        private Security securityLevel;
+        private int v1;
+        private string v2;
+        private decimal v3;
+        private DateTime dateTime;
+        private Security dBA;
+
+        public Employee(int id, string name, char gender, decimal salary, DateTime hireDate, Security security)
+        {
+            this.id = id;
+            Name = name;
+            this.gender = gender;
+            this.salary = salary;
+            HireDate = hireDate;
+            this.security = this.security;
+        }
+
+        public Employee(int v1, string v2, decimal v3, DateTime dateTime, Security dBA)
+        {
+            this.v1 = v1;
+            this.v2 = v2;
+            this.v3 = v3;
+            this.dateTime = dateTime;
+            this.dBA = dBA;
+        }
+
         public char Gender
         {
             get => gender;
