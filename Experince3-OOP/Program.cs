@@ -5,7 +5,7 @@ class Program
     static void Main()
     {
 
-        #region Design and implement a Class for the employees in a company:
+        #region 1- Design and implement a Class for the employees in a company:
 
         //Employee employee = new Employee()
         //{
@@ -19,7 +19,7 @@ class Program
 
         #endregion
 
-        #region Develop a Class to represent the Hiring Date Data
+        #region 2- Develop a Class to represent the Hiring Date Data
         //HiringDate hireDate =new HiringDate(12, 5, 2023);
         //hireDate.Display();
 
@@ -37,7 +37,7 @@ class Program
 
         #endregion
 
-        #region Create an array of Employees with size three a DBA, Guest and the third one is security officer who have full permissions. (Employee [] EmpArr;)
+        #region 3- Create an array of Employees with size three a DBA, Guest and the third one is security officer who have full permissions. (Employee [] EmpArr;)
 
         //Employee[] EmpArr = new Employee[3];
 
@@ -77,21 +77,51 @@ class Program
 
         #endregion
 
-        #region Sort the employees based on their hire date then Print the sorted array.
+        #region 4- Sort the employees based on their hire date then Print the sorted array.
 
-        Employee[] EmpArr2 = new Employee[3];
-        EmpArr2[0] = new Employee(120, "Hazem", 'M', 322321, new DateTime(2023, 10, 6), Security.Developer);
-        EmpArr2[1] = new Employee(10, "mahmoud", 'M', 1240.50m, new DateTime(2010, 10, 1), Security.Developer);
-        EmpArr2[2] = new Employee(130, "mouhamed", 'M', 13400.50m, new DateTime(2005, 6, 3), Security.Developer);
+        //Employee[] EmpArr2 = new Employee[3];
+        //EmpArr2[0] = new Employee(120, "Hazem", 'M', 322321, new DateTime(2023, 10, 6), Security.Developer);
+        //EmpArr2[1] = new Employee(10, "mahmoud", 'M', 1240.50m, new DateTime(2010, 10, 1), Security.Developer);
+        //EmpArr2[2] = new Employee(130, "mouhamed", 'M', 13400.50m, new DateTime(2005, 6, 3), Security.Developer);
 
-        Array.Sort(EmpArr2, (emp1, emp2) => emp1.HireDate.CompareTo(emp2.HireDate));
-        Console.WriteLine("=== Sorted Employee List by Hire Date ===\n");
-        foreach (var emp in EmpArr2)
-        {
-            Console.WriteLine(emp);
-            Console.WriteLine(new string('-', 30));
-        }
+        //Array.Sort(EmpArr2, (emp1, emp2) => emp1.HireDate.CompareTo(emp2.HireDate));
+        //Console.WriteLine("=== Sorted Employee List by Hire Date ===\n");
+        //foreach (var emp in EmpArr2)
+        //{
+        //    Console.WriteLine(emp);
+        //    Console.WriteLine(new string('-', 30));
+        //}
 
         #endregion
+
+        #region 5- Design a program for a library management system where.
+
+        EBook  ebook =new EBook("C# Programming", "Hazem", "1234", 2.5);
+
+        PrintedBook printedBook = new PrintedBook("Learning OOP", "Eltawel", "234", 300);
+
+        Console.WriteLine("EBook Details "); 
+        ebook.Display();
+        Console.WriteLine();
+
+        Console.WriteLine("printed Book ");
+
+        printedBook.Display();
+
+
+
+
+
+        #endregion
+
+
+
+
+
+
+
+
+
+
     }
 }
